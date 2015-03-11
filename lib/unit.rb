@@ -13,5 +13,9 @@ class Unit
     enemy_unit.damage(@attack_power)
   end
 
+  def dead?
+    @health_points <= 0
+  end
+
 
 end

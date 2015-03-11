@@ -20,8 +20,6 @@ class Footman < Unit
 
   def damage(hp)
     @health_points -= hp
-
-
   end
 
 end

@@ -7,6 +7,7 @@ class Barracks
     @food = 80
   end  
 
+
   def train_footman
     @gold -= 135
     @food -+ 2
