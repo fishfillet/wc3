@@ -18,7 +18,8 @@ describe Building do
 
   describe "#damage" do
   it "should only receive 5 (AP) damage from footman" do
-    @building.damage(10)
+    @footman = Footman.new
+    @footman.attack!(@building)
     expect(@building.health_points).to eq(495) # HP started at 500. Receive 10/2.
   end
 end
